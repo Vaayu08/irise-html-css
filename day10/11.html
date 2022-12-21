@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>udemy</title>
+    <script src="https://kit.fontawesome.com/66f3b5c26a.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #screen{
+            width:100%;
+            border:1px solid black;
+        }
+        #Navbar div{
+            position: absolute;
+            top: 25%;
+        }
+        #screen div:nth-child(1){
+            width:100%;
+            border: 50px ;
+            position: relative;
+        }
+        #Navbar div:nth-child(1){
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        #Navbar div:nth-child(2){
+            margin-left: 100px;
+            margin-top: -5px;
+        }
+        #Navbar div:nth-child(2) > h4{
+            margin-top: 7px;
+            font-size: 10px;
+            font-weight: 100;
+        }
+        #Navbar div:nth-child(3) {
+            margin-left: 150px;
+            margin-top: -2px;
+            font-size: 13px;
+            border-radius: 15px;
+            height: 30px;
+            width: 480px;
+            /* background-color: aliceblue; */
+            border: 1px solid black;
+        }
+        #Navbar div:nth-child(3) > i{
+            margin-left: 10px;
+            margin-top: 9px;
+        }
+        #Navbar div:nth-child(3) > input{
+            border:none;
+            outline: none;
+            width:400px;
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        #Navbar div:nth-child(4){
+            margin-left: 650px;
+            margin-top: 10px;
+            font-size: 100;
+        }
+        #Navbar div:nth-child(5){
+            margin-left: 770px;
+            margin-top: 10px;
+        }
+        #Navbar div:nth-child(6) >i{
+            margin-left: 900px;
+            margin-top: 10px;
+        }
+        #Navbar div:nth-child(7){
+            margin-left: 950px;
+            margin-top: 10px;
+        }
+        #Navbar div:nth-child(7) >button{
+            width: 55px;
+            font-size: 10px;
+            height: 25px;
+            background-color: white;
+        }
+        #Navbar div:nth-child(8) {
+            margin-left: 1030px;
+            margin-top: 10px;
+        }
+        #Navbar div:nth-child(8) >button{
+            width: 55px;
+            font-size: 10px;
+            font-weight: 600;
+            height: 25px;
+            background-color:black;
+            color: white;
+        }
+        #Navbar div:nth-child(9) {
+            margin-left: 1110px;
+            margin-top: 10px;
+        }
+        #Navbar div:nth-child(9) >button{
+            width: 55px;
+            font-size: 10px;
+            height: 25px;
+            background-color: white;
+        }
+        #Bodypart div:nth-child(1){
+            margin-left: 510px;
+            margin-top: 150px;
+        }
+        /* #Bodypart div:nth-child(2){
+            margin-left: 510px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 15px;
+            height: 50px;
+            width: 250px;
+            /* background-color: aliceblue; */
+            /* border: 1px solid black;
+        } */ */
+        /* #Bodypart div:nth-child(2) i{
+            margin-left: 8px;
+            margin-top: 9px;
+        } */
+        /* #Bodypart div:nth-child(2)>input{
+            border:none;
+            outline:none;
+            margin-left: 15px;
+        } */
+        /* #Bodypart div:nth-child(2) {
+            margin-left: 510px;
+            margin-top: 20;
+        }
+        #Bodypart div:nth-child(2) i{
+            margin-left: 450px;
+            margin-top: 9px;
+        } */
+        #Bodypart div:nth-child(2) {
+            margin-left: 540px;
+            margin-top: 20px;
+        }
+        #Bodypart div:nth-child(2) >button{
+            margin-left: 510px;
+            margin-top: 20px;
+            width: 200px;
+            font-size: 10px;
+            height: 30px;
+            background-color: white;
+        }
+        #Bodypart div:nth-child(3) {
+            margin-left: 540px;
+            margin-top: 20px;
+        }
+        #Bodypart div:nth-child(3) >button{
+            margin-left: 510px;
+            margin-top: 20px;
+            width: 200px;
+            font-size: 10px;
+            height: 30px;
+            background-color: white;
+        }
+        #Bodypart div:nth-child(4) {
+            margin-left: 540px;
+            margin-top: 20px;
+        }
+        #Bodypart div:nth-child(4) >button{
+            margin-left: 510px;
+            margin-top: 20px;
+            width: 200px;
+            font-size: 10px;
+            height: 30px;
+            background-color: white;
+        }
+        /* #Bodypart div:nth-child(2) >i{ 
+            margin-left: 500px;
+            width: 15px;
+        } */
+        #Bodypart div:nth-child(3){
+            margin-left: 510px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 15px;
+            height: 30px;
+            width: 200px;
+            /* background-color: aliceblue; */
+            border: 1px solid black;
+        }
+        #Bodypart div:nth-child(3) i{
+            margin-left: 9px;
+            margin-top: 9px;
+        }
+        #Bodypart div:nth-child(3)>input{
+            border:none;
+            outline:none;
+            margin-left: 15px;
+        }
+        #Bodypart div:nth-child(4){
+            margin-left: 510px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 15px;
+            height: 30px;
+            width: 200px;
+            /* background-color: aliceblue; */
+            border: 1px solid black;
+        }
+        #Bodypart div:nth-child(4) i{
+            margin-left: 9px;
+            margin-top: 9px;
+        }
+        #Bodypart div:nth-child(4)>input{
+            border:none;
+            outline:none;
+            margin-left: 15px;
+        }
+        #Bodypart div:nth-child(5){
+            margin-left: 510px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 15px;
+            height: 30px;
+            width: 200px;
+            /* background-color: aliceblue; */
+            border: 1px solid black;
+        }
+        #Bodypart div:nth-child(5)>input{
+            border:none;
+            outline:none;
+            margin-left: 15px;
+        }
+        #Bodypart div:nth-child(6){
+            margin-left: 510px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 15px;
+            height: 30px;
+            width: 200px;
+            /* background-color: aliceblue; */
+            border: 1px solid black;
+        }
+        #Bodypart div:nth-child(6)>input{
+            border:none;
+            outline:none;
+            margin-left: 15px;
+        }
+        #Bodypart div:nth-child(7) {
+            margin-left: 510px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+        #Bodypart div:nth-child(7) >button{
+            width: 200px;
+            font-size: 10px;
+            height: 25px;
+            background-color: #a435f0;
+            border-radius: 15px;
+            border: 1px solid black;
+        }
+        #Bodypart div:nth-child(8) {
+            margin-left: 520px;
+            
+        }
+        #Bodypart div:nth-child(9) {
+            margin-left: 540px;
+            margin-top: -15px;
+            color: #a435f0;
+            text-decoration: underline;
+        }
+        #Bodypart div:nth-child(10) {
+            margin-left: 520px;
+            
+        }
+        #Bodypart div:nth-child(11) {
+            margin-left: 655px;
+            margin-top: -15px;
+            color: #a435f0;
+            text-decoration: underline;
+        }
+        #Bodypart div:nth-child(12) {
+            margin-left: 545px;
+            margin-top: 15px;
+            color: #a435f0;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="Navbar">
+            <div>
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" style="height:25px; width: 70px" alt="udemy"/>
+            </div>
+            <div>
+             <h4>Categories</h4>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search For Anything"search for anything/>
+            </div>
+            <div>
+                <h5>Udemy Business</h5>
+            </div>
+            <div>
+                <h5>Teach on udemy</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <button>Log In</button>
+            </div>
+            <div>
+                <button>sign Up siddharth</button>
+                </div>
+            <div>
+                <button>
+                <i class="fa-solid fa-globe"></i>
+            </button>
+            </div>
+            <div></div>
+        </div>
+        <div id="Bodypart" >
+            <div>
+                <h5>Log in to your Udemy Account</h5>
+            </div>
+            <div>
+                <button>
+                <i class="fa-brands fa-google" ></i>
+                Continue with google
+                </button>
+            </div>
+            <div>
+                <button>
+                <i class="fa-brands fa-apple" ></i>
+                Continue with apple
+                </button>
+            </div>
+            <div>
+                <button>
+                <i class="fa-brands fa-facebook"></i>
+                Continue with facebook
+                </button>
+            </div>
+            <div>
+                <input placeholder="Email"Email/>
+            </div>
+            <div>
+                <input placeholder="Password"password/>
+            </div>
+            <div>
+                <button>Log In</button>
+            </div>
+            <div>
+                <h5>Or </h5>
+            </div>
+            <div>
+                <h5>Forgate Password</h5>
+            </div>
+            <div>
+                <h5>Don't have an account</h5>
+            </div>
+            <div>
+                <h5> Sign Up</h5>
+            </div>
+            <div>
+                <h5>Log In with Your Oranisation</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <script src="https://kit.fontawesome.com/66f3b5c26a.js" crossorigin="anonymous"></script>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #navbar{
+        display: flex;
+        height: 45px;
+        background-color:black;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+    #navbar>div:nth-child(1){
+        display: flex;
+        width: 150px;
+        margin-left: 11px;
+        margin-top: 11px;
+    }
+    #navbar>div:nth-child(1) img{
+        height: 25px;
+        margin: 2%;
+    }
+    #navbar>div:nth-child(2) {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        margin-left: 200px;
+        margin-top: 15px;
+        font-family: monospace;
+        width: 450px;
+        font-size: 14px;
+    }
+    #navbar div:nth-child(4)>div>button{
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+     width: 200px;
+    height: 55px;
+    }
+    #navbar>div:nth-child(3) button{
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+        background-color: transparent;
+        margin-top: -230px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png" alt="cult.fit">
+        </div>
+        <div>
+        <h1>FITNESS</h1>
+        <h1>CARE</h1>
+        <h1>MIND</h1>
+        <h1>STORE</h1>
+        </div>
+        <div>
+        <button>
+            <sapn>MUMBAI</sapn>
+            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/location.png" alt="location" />
+        </button>
+
+        <button>
+           GET APP
+        </button>
+        <IMG SRC="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/Profile.png" alt="CULT FIT"/>
+        <IMG SRC="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/cart-dark-theme.svg" alt="cultfit"/>
+    </div>
+</body>
+</html>
